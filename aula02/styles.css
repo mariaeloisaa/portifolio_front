@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-bar p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.titulo-exercicios {
+    text-align: center;
+    font-size: 2rem;
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+.descricao-aula {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    border-color: #4CAF50;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer .footer-container p {
+    font-size: 1rem;
+}

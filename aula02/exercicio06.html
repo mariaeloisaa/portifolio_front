@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 02</title>
+</head>
+<body>
+    <h1>Exercício 06</h1>
+    <h3>Média das notas</h3>
+    <script>
+        alert("Verifique se a média das notas é par e se está acima da média");
+        let nota1 = parseFloat(prompt("Digite a primeira nota:"));
+        let nota2 = parseFloat(prompt("Digite a segunda nota:"));
+
+        let media = (nota1 + nota2) / 2;
+
+        alert("A média das notas é: " + media);
+
+        if (media % 2 === 0) {
+        alert("A média é par.");
+        } else {
+        alert("A média é ímpar.");
+        }
+
+        if (media > 7) {
+        alert("A média está acima da média.");
+        } else {
+        alert("A média está abaixo da média.");
+        }
+    </script>
+
+    <a href="aula02.html"><button>Voltar</button></a>
+    
+</body>
+</html>
