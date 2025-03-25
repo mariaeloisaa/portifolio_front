@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>Exercício 02</h1>
+    <h3>Inverter String</h3>
+    <script>
+        alert("Inira uma String e inverta ela")
+        const soma = (a, b) => a + b;
+        const subtracao = (a, b) => a - b;
+        const multiplicacao = (a, b) => a * b;
+        const divisao = (a, b) => a / b;
+
+        let num1 = parseFloat(prompt("Digite o primeiro número:"));
+        let num2 = parseFloat(prompt("Digite o segundo número:"));
+        let operacao = prompt("Escolha a operação (+, -, *, /):");
+
+        let resultado;
+        if (operacao === '+') resultado = soma(num1, num2);
+        else if (operacao === '-') resultado = subtracao(num1, num2);
+        else if (operacao === '*') resultado = multiplicacao(num1, num2);
+        else if (operacao === '/') resultado = divisao(num1, num2);
+        else resultado = "Operação inválida";
+
+        alert("Resultado: " + resultado);
+    </script>
+
+    <a href="aula03.html"><button>Voltar</button></a>
+    
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+<body>
+    <h1>Exercício 02</h1>
+    <h3>Média aritmética de 8 valores</h3>
+    <script>
+        alert("Calcule a média aritmética de 8 números.");
+
+        let numeros = []; 
+        let soma = 0;
+
+        for (let i = 1; i <= 8; i++) {
+            let numero = parseInt(prompt("Digite o número " + (i) + ":"));
+            numeros.push(numero); 
+        }
+
+        numeros.forEach(function(valor) {
+        soma += valor;
+        });
+
+        let media = soma / 8;
+
+        alert("A média aritmética dos números é: " + media);
+    </script>
+
+    <a href="aula04.html"><button>Voltar</button></a>
+    
+</body>
+</html>

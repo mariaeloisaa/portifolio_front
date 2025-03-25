@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+<body>
+    <h1>Exercício 03</h1>
+    <h3>Média 20 idades</h3>
+    <script>
+        alert("Calcule as idades acima da média.");
+
+        let idades = [];
+        let soma = 0;
+        let contador = 0;
+
+        while (contador < 20) {
+            let idade = parseInt(prompt("Digite a idade da pessoa " + (contador + 1) + ":"));
+            idades.push(idade);
+            soma += idade;
+            contador++;
+        }
+
+        let media = soma / 20;
+
+        let idades_acima_media = [];
+        let i = 0;
+        while (i < 20) {
+            if (idades[i] > media) {
+                idades_acima_media.push(idades[i]);
+            }
+            i++;
+        }
+
+        if (idades_acima_media.length > 0) {
+            let resultado = "As idades acima da média (" + media + ") são: ";
+            i = 0;
+            while (i < idades_acima_media.length) {
+                resultado += idades_acima_media[i];
+                if (i < idades_acima_media.length - 1) {
+                    resultado += ", ";
+                }
+                i++;
+            }
+            alert(resultado);
+        } else {
+            alert("Não há idades acima da média.");
+        }
+    </script>
+
+    <a href="aula04.html"><button>Voltar</button></a>
+    
+</body>
+</html>

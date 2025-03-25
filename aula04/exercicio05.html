@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+<body>
+    <h1>Exercício 04</h1>
+    <h3>Nomes armazenados</h3>
+    <script>
+        alert("Insira 10 nomes e veja se eles estão armazenados");
+        let nomes = [];
+        let contador = 0;
+
+        while (contador < 10) {
+            let nome = prompt("Digite o nome " + (contador + 1) + " de 10:");
+            nomes.push(nome);
+            contador++;
+        }
+
+        let nomeBusca = prompt("Digite o nome a ser buscado:");
+        let resultado = "Nome não encontrado!";
+
+        let i = 0;
+        while (i < 10) {
+            if (nomes[i] === nomeBusca) {
+                resultado = "Nome encontrado na posição: " + i;
+                break;
+            }
+            i++;
+        }
+
+        alert(resultado);
+    </script>
+
+    <a href="aula04.html"><button>Voltar</button></a>
+    
+</body>
+</html>

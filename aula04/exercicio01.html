@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+<body>
+    <h1>Exercício 01</h1>
+    <h3>Dobro de 5 valores armazenados</h3>
+    <script>
+
+        numeros = []
+        for (let i = 1; i <= 5; i++) {
+            let num = parseInt(prompt(`Digite o ${i}º número:`));
+            numeros.push(num)
+        }
+
+        let dobro = numeros.map(n => n*2)
+        alert (`O dobro de ${numeros} é ${dobro}`)
+
+    </script>
+
+    <a href="aula04.html"><button>Voltar</button></a>
+    
+</body>
+</html>

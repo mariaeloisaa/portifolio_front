@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 04</title>
+</head>
+<body>
+    <h1>Exercício 04</h1>
+    <h3>Valores pares</h3>
+    <script>
+        alert("Digite 10 números para verificar os valores pares");
+
+        let numeros = [];
+        let contador = 0;
+        let resultado = "Os números pares são: ";
+        let i = 0;
+
+        while (contador < 10) {
+            let numero = parseInt(prompt("Digite o número " + (contador + 1) + ":"));
+            numeros.push(numero);
+            contador++;
+        }
+
+        while (i < 10) {
+            if (numeros[i] % 2 === 0) {
+                resultado += numeros[i] + " ";
+            }
+            i++;
+        }
+
+        if (resultado === "Os números pares são: ") {
+            alert("Todos os números são ímpares.");
+        } else {
+            alert(resultado);
+        }
+    </script>
+
+    <a href="aula04.html"><button>Voltar</button></a>
+    
+</body>
+</html>
