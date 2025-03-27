@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>Exercício 03</h1>
+    <h3>Imprimir cada letra</h3>
+    <script>
+        alert("Insira uma frase");
+        
+        const imprimirLetras = (palavra) => {
+            for (let i = 0; i < palavra.length; i++) {
+                alert(palavra.charAt(i));
+            }
+        };
+    
+        let palavra = prompt("Digite uma palavra:");
+        imprimirLetras(palavra);
+    </script>
+
+    <a href="aula03.html"><button>Voltar</button></a>
+    
+</body>
+</html>

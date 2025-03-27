@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>Exercício 10</h1>
+    <h3>Imposto de Renda</h3>
+    <script>
+        alert("Calcule o Imposto de Renda baseado nas faixas salariais");
+    
+        const calcularImpostoDeRenda = (salario) => {
+            let imposto = 0;
+    
+            if (salario <= 1903.98) {
+                imposto = 0; // Isento
+            } else if (salario <= 2826.65) {
+                imposto = salario * 0.075; // 7.5% de imposto
+            } else if (salario <= 3751.05) {
+                imposto = salario * 0.15; // 15% de imposto
+            } else if (salario <= 4664.68) {
+                imposto = salario * 0.225; // 22.5% de imposto
+            } else {
+                imposto = salario * 0.275; // 27.5% de imposto
+            }
+    
+            alert("O imposto de renda sobre o salário de R$" + salario.toFixed(2) + " é R$" + imposto.toFixed(2));
+        };
+    
+        let salario = parseFloat(prompt("Digite o seu salário:"));
+        calcularImpostoDeRenda(salario);
+    </script>
+    
+    
+    <a href="aula03.html"><button>Voltar</button></a>
+    
+</body>
+</html>

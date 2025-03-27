@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>Exercício 11</h1>
+    <h3>INSS</h3>
+    <script>
+        alert("Calcule o valor do INSS com base no salário");
+    
+        const calcularINSS = (salario) => {
+            let aliquota;
+    
+            if (salario <= 1302.00) {
+                aliquota = 0.075; // 7.5% de alíquota
+            } else if (salario <= 2571.29) {
+                aliquota = 0.09;  // 9% de alíquota
+            } else if (salario <= 3856.94) {
+                aliquota = 0.12;  // 12% de alíquota
+            } else if (salario <= 7507.49) {
+                aliquota = 0.14;  // 14% de alíquota
+            } else {
+                aliquota = 0;     // Acima do teto, sem contribuição
+            }
+    
+            let inss = salario * aliquota;
+            alert("O valor do INSS para o salário de R$" + salario.toFixed(2) + " é R$" + inss.toFixed(2));
+        };
+    
+        let salario = parseFloat(prompt("Digite o seu salário:"));
+        calcularINSS(salario);
+    </script>
+    
+    
+    
+    <a href="aula03.html"><button>Voltar</button></a>
+    
+</body>
+</html>

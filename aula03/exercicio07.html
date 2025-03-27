@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>Exercício 07</h1>
+    <h3>Cédulas para formar um valor</h3>
+    <script>
+        alert("Insira um valor e veja as céduças necessárias para forma-lo");
+    
+        const calcularCedulas = (valor) => {
+            let cedulas = [200, 100, 50, 20, 10, 5, 1];
+            let resultado = '';
+    
+            for (let i = 0; i < cedulas.length; i++) {
+                let quantidade = parseInt(valor / cedulas[i]);
+                if (quantidade > 0) {
+                    resultado += quantidade + " cédulas de R$" + cedulas[i] + "\n";
+                    valor -= quantidade * cedulas[i];
+                }
+            }
+    
+            alert(resultado);
+        };
+    
+        let valor = parseInt(prompt("Digite o valor:"));
+        calcularCedulas(valor);
+    </script>
+    
+    
+    
+    
+
+    <a href="aula03.html"><button>Voltar</button></a>
+    
+</body>
+</html>

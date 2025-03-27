@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>Exercício 05</h1>
+    <h3>Ordem Crescente</h3>
+    <script>
+        alert("Insira três números");
+    
+        const ordenarNumeros = (num1, num2, num3) => {
+            let menor, medio, maior;
+    
+            if (num1 <= num2 && num1 <= num3) {
+                menor = num1;
+                if (num2 <= num3) {
+                    medio = num2;
+                    maior = num3;
+                } else {
+                    medio = num3;
+                    maior = num2;
+                }
+            } else if (num2 <= num1 && num2 <= num3) {
+                menor = num2;
+                if (num1 <= num3) {
+                    medio = num1;
+                    maior = num3;
+                } else {
+                    medio = num3;
+                    maior = num1;
+                }
+            } else {
+                menor = num3;
+                if (num1 <= num2) {
+                    medio = num1;
+                    maior = num2;
+                } else {
+                    medio = num2;
+                    maior = num1;
+                }
+            }
+    
+            alert("Números em ordem crescente: " + menor + ", " + medio + ", " + maior);
+        };
+    
+        let num1 = parseInt(prompt("Digite o primeiro número:"));
+        let num2 = parseInt(prompt("Digite o segundo número:"));
+        let num3 = parseInt(prompt("Digite o terceiro número:"));
+        
+        ordenarNumeros(num1, num2, num3);
+    </script>
+    
+    
+
+    <a href="aula03.html"><button>Voltar</button></a>
+    
+</body>
+</html>

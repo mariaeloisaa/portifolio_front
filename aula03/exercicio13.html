@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>Exercício 13</h1>
+    <h3>Simular Financiamento</h3>
+    <script>
+        alert("Simule o valor das parcelas de um financiamento!");
+    
+        const calcularParcelas = (valorFinanciamento, taxaJuros, numeroParcelas) => {
+            let parcela = (valorFinanciamento * (1 + taxaJuros)) / numeroParcelas;
+            alert("O valor das parcelas será R$" + parcela.toFixed(2));
+        };
+    
+        let valorFinanciamento = parseFloat(prompt("Digite o valor do financiamento (R$):"));
+        let taxaJuros = parseFloat(prompt("Digite a taxa de juros (em decimal, por exemplo, 0.05 para 5%):"));
+        let numeroParcelas = parseInt(prompt("Digite o número de parcelas:"));
+        
+        calcularParcelas(valorFinanciamento, taxaJuros, numeroParcelas);
+    </script>
+    
+    
+    
+    
+    
+    <a href="aula03.html"><button>Voltar</button></a>
+    
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>Exercício 09</h1>
+    <h3>Formulário de Cadastro</h3>
+
+    <form id="formCadastro">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome"><br><br>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco"><br><br>
+
+        <label>Sexo:</label>
+        <input type="radio" id="masculino" name="sexo" value="masculino"> Masculino
+        <input type="radio" id="feminino" name="sexo" value="feminino"> Feminino
+        <br><br>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone"><br><br>
+
+        <label for="celular">Celular:</label>
+        <input type="text" id="celular" name="celular"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+
+        <button type="button" onclick="validarFormulario()">Enviar</button>
+    </form>
+
+    <script>
+        function validarFormulario() {
+            let nome = document.getElementById("nome").value;
+            let endereco = document.getElementById("endereco").value;
+            let telefone = document.getElementById("telefone").value;
+            let celular = document.getElementById("celular").value;
+            let email = document.getElementById("email").value;
+            let sexoMasculino = document.getElementById("masculino").checked;
+            let sexoFeminino = document.getElementById("feminino").checked;
+
+            if (!nome) {
+                alert("O campo Nome está vazio.");
+            } else if (!endereco) {
+                alert("O campo Endereço está vazio.");
+            } else if (!sexoMasculino && !sexoFeminino) {
+                alert("Selecione o Sexo.");
+            } else if (!telefone) {
+                alert("O campo Telefone está vazio.");
+            } else if (!celular) {
+                alert("O campo Celular está vazio.");
+            } else if (!email) {
+                alert("O campo Email está vazio.");
+            } else {
+                alert("Cadastro enviado com sucesso!");
+            }
+        }
+    </script>
+    
+    <a href="aula03.html"><button>Voltar</button></a>
+    
+</body>
+</html>

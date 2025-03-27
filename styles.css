@@ -1,8 +1,6 @@
-
-body {
-   
-  }
-
+*{
+    font-family:"Montserrat", sans-serif;
+}
 
 /* INDEX */
 
@@ -95,7 +93,7 @@ header {
 }
 
 .home-button {
-    background-color: #4CAF50;
+    background-color: #FFB345;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -107,7 +105,7 @@ header {
 }
 
 .home-button:hover {
-    background-color: #45a049;
+    background-color: #F28444;
 }
 
 /* Main */
@@ -265,7 +263,6 @@ footer {
 
 /* Caixinha de link e botão da Aula 1 */
 .aula1-link-box {
-    background-color: #f0f0f0;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -277,7 +274,7 @@ footer {
 }
 
 .aula1-link-box button {
-    background-color: #4CAF50;
+    background-color: #FFB345;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -288,5 +285,5 @@ footer {
 }
 
 .aula1-link-box button:hover {
-    background-color: #45a049;
+    background-color: #F28444;
 }

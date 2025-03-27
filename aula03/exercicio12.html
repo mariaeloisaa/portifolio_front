@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 03</title>
+</head>
+<body>
+    <h1>Exercício 12</h1>
+    <h3>Juros Compostos</h3>
+    <script>
+        alert("Calcule o valor dos juros compostos!");
+    
+        const calcularJurosCompostos = (capitalInicial, taxaJuros, tempo) => {
+            let montante = capitalInicial;
+            
+            for (let i = 0; i < tempo; i++) {
+                montante += montante * taxaJuros;
+            }
+    
+            let juros = montante - capitalInicial;
+            alert("O valor dos juros compostos após " + tempo + " período(s) é R$" + juros.toFixed(2) + ".\n" +
+                  "O montante final será R$" + montante.toFixed(2));
+        };
+    
+        let capitalInicial = parseFloat(prompt("Digite o capital inicial (R$):"));
+        let taxaJuros = parseFloat(prompt("Digite a taxa de juros ao mês (em decimal, por exemplo, 0.05 para 5%):"));
+        let tempo = parseInt(prompt("Digite o tempo (em meses):"));
+        
+        calcularJurosCompostos(capitalInicial, taxaJuros, tempo);
+    </script>
+    
+    
+    
+    
+    <a href="aula03.html"><button>Voltar</button></a>
+    
+</body>
+</html>
