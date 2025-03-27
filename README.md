@@ -1,8 +1,8 @@
-#Portfólio de Programação Web Front End#
+# Portfólio de Programação Web Front End
 
 Este é um site que serve como portfólio das aulas de Programação Web Front End, apresentando os exercícios desenvolvidos durante o semestre. O projeto utiliza as tecnologias HTML, CSS e JavaScript para criar páginas interativas.
   
-##Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 **HTM**L: Estrutura do site
 
@@ -10,7 +10,7 @@ Este é um site que serve como portfólio das aulas de Programação Web Front E
 
 **JavaScript**: Exercícios e interatividade
 
-##Funcionalidades
+## Funcionalidades
 
 Exibição de exercícios e atividades desenvolvidas durante as aulas
 
@@ -19,7 +19,7 @@ Navegação intuitiva entre os conteúdos
 Interação dinâmica utilizando JavaScript
 
 
-##Autora
+## Autora
 
 *Maria Eloisa Fortunato da Silva*
 
