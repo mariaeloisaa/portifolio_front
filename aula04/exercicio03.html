@@ -17,7 +17,7 @@
 
         while (contador < 20) {
             let idade = parseInt(prompt("Digite a idade da pessoa " + (contador + 1) + ":"));
-            idades.push(idade);
+            idades.push(idade); // ARMAZENA IDADES
             soma += idade;
             contador++;
         }
@@ -28,25 +28,40 @@
         let i = 0;
         while (i < 20) {
             if (idades[i] > media) {
-                idades_acima_media.push(idades[i]);
+                idades_acima_media.push(idades[i]); // ARMAZENA IDADES ACIMA DA MEDIA
             }
             i++;
         }
 
-        if (idades_acima_media.length > 0) {
-            let resultado = "As idades acima da média (" + media + ") são: ";
-            i = 0;
-            while (i < idades_acima_media.length) {
-                resultado += idades_acima_media[i];
-                if (i < idades_acima_media.length - 1) {
-                    resultado += ", ";
-                }
-                i++;
+        // Verifica se há idades acima da média
+    if (idades_acima_media.length > 0) { 
+        // Inicializa a string do resultado com a média calculada
+        let resultado = "As idades acima da média (" + media + ") são: "; 
+        
+        // Inicializa o índice para o loop
+        i = 0; 
+        
+        // Usa um loop while para percorrer a lista de idades acima da média
+        while (i < idades_acima_media.length) { 
+            // Adiciona a idade atual à string de resultado
+            resultado += idades_acima_media[i]; 
+            
+            // Se não for o último elemento, adiciona uma vírgula e um espaço
+            if (i < idades_acima_media.length - 1) { 
+                resultado += ", "; 
             }
-            alert(resultado);
-        } else {
-            alert("Não há idades acima da média.");
+            
+            // Incrementa o índice
+            i++; 
         }
+        
+        // Exibe o resultado em um alerta
+        alert(resultado); 
+    } else { 
+        // Caso não haja idades acima da média, exibe uma mensagem informando isso
+        alert("Não há idades acima da média."); 
+    }
+
     </script>
 
     <a href="aula04.html"><button>Voltar</button></a>

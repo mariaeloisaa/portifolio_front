@@ -15,7 +15,7 @@
 
         while (contador < 10) {
             let nome = prompt("Digite o nome " + (contador + 1) + " de 10:");
-            nomes.push(nome);
+            nomes.push(nome); // ARMAZENA OS NOMES
             contador++;
         }
 
@@ -23,8 +23,8 @@
         let resultado = "Nome não encontrado!";
 
         let i = 0;
-        while (i < 10) {
-            if (nomes[i] === nomeBusca) {
+        while (i < 10) { // LOOP PARA VALIDAR CADA NOME
+            if (nomes[i] === nomeBusca) { // VALIDA SE EXISTE O NOME BUSCADO
                 resultado = "Nome encontrado na posição: " + i;
                 break;
             }

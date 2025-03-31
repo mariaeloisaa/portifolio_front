@@ -9,24 +9,21 @@
     <h1>Exercício 02</h1>
     <h3>Inverter String</h3>
     <script>
-        alert("Inira uma String e inverta ela")
-        const soma = (a, b) => a + b;
-        const subtracao = (a, b) => a - b;
-        const multiplicacao = (a, b) => a * b;
-        const divisao = (a, b) => a / b;
+        alert("Insira uma String e inverta ela")
+        // Função para inverter a string
+        const inverterString = (str) => str.split("").reverse().join("");
 
-        let num1 = parseFloat(prompt("Digite o primeiro número:"));
-        let num2 = parseFloat(prompt("Digite o segundo número:"));
-        let operacao = prompt("Escolha a operação (+, -, *, /):");
+        // Solicita ao usuário que digite uma palavra
+        let palavra = prompt("Digite uma palavra para inverter:");
 
-        let resultado;
-        if (operacao === '+') resultado = soma(num1, num2);
-        else if (operacao === '-') resultado = subtracao(num1, num2);
-        else if (operacao === '*') resultado = multiplicacao(num1, num2);
-        else if (operacao === '/') resultado = divisao(num1, num2);
-        else resultado = "Operação inválida";
-
-        alert("Resultado: " + resultado);
+        // Verifica se o usuário digitou algo válido
+        if (palavra) {
+            // Exibe a palavra invertida
+            alert("Palavra invertida: " + inverterString(palavra));
+        } else {
+            // Caso o usuário não tenha digitado nada, exibe uma mensagem
+            alert("Você não digitou uma palavra válida.");
+        }
     </script>
 
     <a href="aula03.html"><button>Voltar</button></a>

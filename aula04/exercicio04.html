@@ -15,15 +15,16 @@
         let contador = 0;
         let resultado = "Os números pares são: ";
         let i = 0;
-
+        // Loop para solicitar 10 números ao usuário
         while (contador < 10) {
             let numero = parseInt(prompt("Digite o número " + (contador + 1) + ":"));
             numeros.push(numero);
             contador++;
         }
-
+        // Loop para verificar quais números do array são pares
         while (i < 10) {
             if (numeros[i] % 2 === 0) {
+                // Adiciona o número par à string de resultado
                 resultado += numeros[i] + " ";
             }
             i++;
